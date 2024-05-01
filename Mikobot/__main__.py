@@ -418,7 +418,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     await query.answer()
 
     if query.data == "git_source":
-        source_link = "https://github.com/Infamous-Hydra/YaeMiko"
+        source_link = "Not Available Guys"
         message_text = (
             f"*Here is the link for the public source repo*:\n\n{source_link}"
         )
@@ -436,7 +436,7 @@ async def gitsource_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
 
 async def repo(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    source_link = "https://github.com/Infamous-Hydra/YaeMiko"
+    source_link = "ERROR 404"
     message_text = f"*Here is the link for the public source repo*:\n\n{source_link}"
 
     await context.bot.send_message(
@@ -779,7 +779,7 @@ def main():
 
     dispatcher.add_error_handler(error_callback)
 
-    LOGGER.info("Mikobot is starting >> Using long polling.")
+    LOGGER.info("Yor Forger is starting >> Using long polling.")
     dispatcher.run_polling(timeout=15, drop_pending_updates=True)
 
 
